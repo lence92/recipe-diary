@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -10,46 +14,4 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
-}
-
-.recipe-diary {
-  display: grid;
-  grid-template-columns: 15rem 44rem;
-  column-gap: 4rem;
-  align-items: start;
-}
-
-.recipe-diary .toggleFormBtn {
-  float: right;
-}
-
-.recipe-diary .recipe-list .recipe {
-  cursor: pointer;
-}
-
-.form {
-  grid-column: 1 / -1;
-  display: grid;
-  align-items: center;
-  gap: 1.2rem;
-  grid-template-columns: 1fr 1.5fr;
-  margin-bottom: 1.6rem;
-  padding: 1.2rem;
-}
-
-label {
-  font-weight: 500;
-}
-
-.form h2 {
-  grid-column: 1 / -1;
-  font-size: 2.2rem;
-  text-transform: uppercase;
-  letter-spacing: -0.5px;
-  margin-bottom: 1.6rem;
-}
-
-.form .button {
-  margin-top: 0.6rem;
-  grid-column: 2;
 }
