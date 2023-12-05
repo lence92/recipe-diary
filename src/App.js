@@ -1,7 +1,6 @@
 import { useState } from "react";
-import FormAddRecipe from "./FormAddRecipe";
 import RecipeList from "./RecipeList";
-import Recipe from "./Recipe";
+import Navbar from "./Navbar";
 
 const initialRecipes = [
   {
@@ -44,36 +43,11 @@ const initialRecipes = [
 
 export default function App() {
   const [recipes, setRecipes] = useState(initialRecipes);
-  const [openRecipe, setOpenRecipe] = useState(null);
-  const [showForm, setShowForm] = useState(false);
-
-  function handleOpenRecipe(recipe) {
-    setOpenRecipe(recipe);
-    setShowForm(false);
-  }
-
-  function handleAddRecipe(recipe) {
-    setRecipes((recipes) => [...recipes, recipe]);
-    setShowForm(false);
-  }
-
-  function handleShowForm() {
-    setShowForm((show) => !show);
-  }
 
   return (
-    <div className="m-4">
-      <div>
-        <RecipeList recipes={recipes} onOpenRecipe={handleOpenRecipe} />
-
-        <button onClick={handleShowForm}>
-          {showForm ? "Close" : "Add recipe"}
-        </button>
-      </div>
-
-      {openRecipe && <Recipe openRecipe={openRecipe} />}
-
-      {showForm && <FormAddRecipe onSetRecipes={handleAddRecipe} />}
+    <div>
+      <Navbar />
+      <RecipeList recipes={recipes} />
     </div>
   );
 }
