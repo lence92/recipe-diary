@@ -43,7 +43,7 @@ export default function Navbar() {
                     href="#"
                     className="inline-flex items-center border-b-2 border-pink-300 px-1 pt-1 text-sm font-medium text-gray-900"
                   >
-                    My Kitchen333
+                    My Kitchen
                   </a>
                   <a
                     href="#"
@@ -66,8 +66,8 @@ export default function Navbar() {
                 </div>
               </div>
               <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-                <div class="relative text-gray-400 focus-within:text-gray-500 hidden lg:block">
-                  <span class="absolute inset-y-0 left-0 flex items-center pl-2">
+                <div class="relative text-gray-400 focus-within:text-gray-500">
+                  <span class="relative lg:absolute inset-y-0 left-0 flex items-center pl-2">
                     <button
                       type="submit"
                       class="p-1 focus:outline-none focus:shadow-outline"
@@ -87,7 +87,7 @@ export default function Navbar() {
                   </span>
                   <input
                     type="search"
-                    className="rounded-lg border-solid border-2 border-gray-300 w-72 px-3 py-1 mr-3 text-sm pl-10 focus:outline-gray-500 focus:outline-offset-0"
+                    className="hidden lg:block rounded-lg border-solid border-2 border-gray-300 w-72 px-3 py-1 mr-3 text-sm pl-10 focus:outline-gray-500 focus:outline-offset-0"
                     placeholder="Search by keywords..."
                   />
                 </div>
@@ -177,7 +177,7 @@ export default function Navbar() {
                 href="#"
                 className="block border-l-4 border-indigo-500 bg-indigo-50 py-2 pl-3 pr-4 text-base font-medium text-indigo-700"
               >
-                My Kitchen222
+                My Kitchen
               </Disclosure.Button>
               <Disclosure.Button
                 as="a"
